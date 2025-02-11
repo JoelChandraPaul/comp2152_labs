@@ -168,6 +168,7 @@ if not input_invalid:
     m_combat_strength += min(6, m_combat_strength + monster_powers[power_roll])
     print("    |    The monster's combat strength is now " + str(
         m_combat_strength) + " using the " + power_roll + " magic power")
+    
     # Lab 06 - Question 6
     num_dream_lvls = -1
     while (num_dream_lvls < 0 or num_dream_lvls > 3):
@@ -189,7 +190,7 @@ if not input_invalid:
                 print("combat strength: " + str(combat_strength))
                 print("health points: " + str(health_points))
         print("num_dream_lvls: ", num_dream_lvls)       
-        
+
     # Fight Sequence
     # Loop while the monster and the player are alive. Call fight sequence functions
     print("    ------------------------------------------------------------------")
