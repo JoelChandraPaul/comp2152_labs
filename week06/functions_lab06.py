@@ -141,7 +141,7 @@ def inception_dream(num_dream_lvls):
 def save_game(winner, hero_name="", num_starts=0):
     with open("save.txt", "a") as file:
         if winner == "Hero":
-            file.write(f"Hero {hero_name} has killed the monster gained {num_starts} stars.\n")
+            file.write(f"Hero {hero_name} has killed the monster and gained {num_starts} stars.\n")
         elif winner == "Monster":
             file.write(f"Monster killed the {hero_name}\n")            
 
@@ -172,4 +172,4 @@ def adjust_combat_strength(combat_strength, m_combat_strength):
                 combat_strength += 1
                 print("    |    In creasing Hero's combat strength since you lost last game")
             else:
-             print("    |   ... Based on your previous game, neither the hero nor the monster's combat strength will be increased")
+             print("    |    ... Based on your previous game, neither the hero nor the monster's combat strength will be increased")
